@@ -15,5 +15,15 @@ public class Main {
 
         System.out.println(s1Name + " is of " + s1Age +" yrs old and has a pen of " + color1 + " color and its a " + type1 + " pen.");
         System.out.println(s1Name + " has played " + sc2.sportsName + " for " + sc2.experience +  " years.");
+
+        // There is destructor in JAVA since we have garbage collector which automatically deleted unused objects and manages memory leaks.
+
+        // Polymorphism
+        Polymorphism p1 = new Polymorphism();
+        p1.name = "Archishmaan";
+        p1.age = 24;
+        int polyAge = p1.printInfo(p1.age);
+
+        System.out.println("Polymorphism example: " + polyAge);;
     }
 }
