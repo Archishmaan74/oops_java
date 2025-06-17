@@ -1,4 +1,5 @@
 package com.archishmaan.oops;
+import com.archishmaan.bank.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -16,7 +17,7 @@ public class Main {
         System.out.println(s1Name + " is of " + s1Age +" yrs old and has a pen of " + color1 + " color and its a " + type1 + " pen.");
         System.out.println(s1Name + " has played " + sc2.sportsName + " for " + sc2.experience +  " years.");
 
-        // There is destructor in JAVA since we have garbage collector which automatically deleted unused objects and manages memory leaks.
+        // There is a destructor in JAVA since we have a garbage collector which automatically deleted unused objects and manages memory leaks.
 
         // Polymorphism
         Polymorphism p1 = new Polymorphism();
@@ -25,5 +26,10 @@ public class Main {
         int polyAge = p1.printInfo(p1.age);
 
         System.out.println("Polymorphism example: " + polyAge);;
+
+        // imported package
+        Account account1 = new Account();
+        account1.name = "customer";
+        System.out.println("Hi " + account1.name);
     }
 }
